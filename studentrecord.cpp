@@ -1,4 +1,4 @@
-#include "studentrecord.h"
+#include "include\studentrecord.h"
 
 void StudentRecords::add_student(Student student)
 {

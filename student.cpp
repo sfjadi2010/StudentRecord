@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "student.h"
+#include "include\student.h"
 
 Student::Student(int sid, string sname, string ssemester)
 {
