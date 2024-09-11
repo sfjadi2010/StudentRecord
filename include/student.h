@@ -16,7 +16,7 @@ class Student
         string semester;
     public:
         Student(int sid, string sname, string ssemester);
-
+        ~Student();
         void set_id(int sid);
         int get_id();
 

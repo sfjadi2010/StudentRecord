@@ -9,6 +9,8 @@ Student::Student(int sid, string sname, string ssemester)
     this->semester = ssemester;
 }
 
+Student::~Student() {}
+
 void Student::set_id(int sid)
 {
     this->id = sid;

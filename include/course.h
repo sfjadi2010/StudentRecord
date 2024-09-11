@@ -15,6 +15,9 @@ class Course
         string course_name;
         int course_credits;
     public:
+        Course(int cid, string cname, int ccredits);
+        ~Course();
+        
         void set_course_id(int cid);
         int get_course_id();
         
