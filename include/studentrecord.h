@@ -8,6 +8,7 @@
 #include <string>
 #include "student.h"
 #include "course.h"
+#include "grade.h"
 
 using namespace std;
 
@@ -16,6 +17,7 @@ class StudentRecords
     private:
         vector<Student> Students;
         vector<Course> Courses;
+        vector<Grade> Grades;
 
     public:
         void add_student(Student);
@@ -23,6 +25,9 @@ class StudentRecords
 
         void add_course(Course);
         Course get_course(int course_id);
+
+        void add_grade(Grade);
+        Grade get_grade();
 };
 
 #endif // STUDENTRECORD_H

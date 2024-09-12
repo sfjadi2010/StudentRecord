@@ -13,9 +13,9 @@ class Grade
         int course_id;
         unsigned char grade;
     public:
-        Grade(int sid, int cid, unsigned char grade);
+        Grade(int sid, int cid, unsigned char sgrade);
         ~Grade();
-        
+
         void set_student_id(int sid);
         int get_student_id();
 
