@@ -33,3 +33,22 @@ Course StudentRecords::get_course(int cid)
 
     return Courses[i];
 }
+
+void StudentRecords::add_grade(Grade grade)
+{
+    Grades.push_back(grade);
+}
+
+vector<Grade> StudentRecords::get_grade(int sid)
+{
+    vector<Grade> filtered_grades;
+
+    // Lambda function to filter based on student_id
+    auto filter_by_student = [sid](const Grade& g) {
+        return g.get_student_id() == sid;
+    };
+
+    copy_if(Grades.begin(), Grades.end(), back_inserter(filtered_grades), filter_by_student);
+
+    return filtered_grades;
+}

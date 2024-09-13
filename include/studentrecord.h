@@ -6,6 +6,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>
 #include "student.h"
 #include "course.h"
 #include "grade.h"
@@ -27,7 +28,7 @@ class StudentRecords
         Course get_course(int course_id);
 
         void add_grade(Grade);
-        Grade get_grade();
+        vector<Grade> get_grade(int sid);
 };
 
 #endif // STUDENTRECORD_H
