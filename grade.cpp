@@ -18,7 +18,7 @@ void Grade::set_student_id(int sid)
   this->student_id = sid;
 }
 
-int Grade::get_student_id()
+int Grade::get_student_id() const
 {
   return student_id;
 }
@@ -28,7 +28,7 @@ void Grade::set_course_id(int cid)
   this->course_id = cid;
 }
 
-int Grade::get_course_id()
+int Grade::get_course_id() const
 {
   return course_id;
 }
@@ -38,7 +38,7 @@ void Grade::set_grade(unsigned char grade)
   this->grade = grade;
 }
 
-unsigned char Grade::get_grade()
+unsigned char Grade::get_grade() const
 {
   return grade;
 }

@@ -22,13 +22,13 @@ class StudentRecords
 
     public:
         void add_student(Student);
-        Student get_student(int student_id);
+        Student get_student(int student_id) const;
 
         void add_course(Course);
-        Course get_course(int course_id);
+        Course get_course(int course_id) const;
 
         void add_grade(Grade);
-        vector<Grade> get_grade(int sid);
+        vector<Grade> get_grade(int sid) const;
 };
 
 #endif // STUDENTRECORD_H

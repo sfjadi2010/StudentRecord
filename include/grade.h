@@ -17,13 +17,13 @@ class Grade
         ~Grade();
 
         void set_student_id(int sid);
-        int get_student_id();
+        int get_student_id() const;
 
         void set_course_id(int cid);
-        int get_course_id();
+        int get_course_id() const;
 
         void set_grade(unsigned char grade);
-        unsigned char get_grade();
+        unsigned char get_grade() const;
 };
 
 #endif // GRADE_H

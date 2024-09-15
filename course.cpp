@@ -16,7 +16,7 @@ void Course::set_course_id(int cid) {
   this->course_id = cid;
 }
 
-int Course::get_course_id() {
+int Course::get_course_id() const {
   return course_id;
 }
 
@@ -24,7 +24,7 @@ void Course::set_course_name(string cname) {
   this->course_name = cname;
 }
 
-string Course::get_course_name() {
+string Course::get_course_name() const {
   return course_name;
 }
 

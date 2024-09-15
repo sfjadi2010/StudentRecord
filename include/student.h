@@ -17,14 +17,15 @@ class Student
     public:
         Student(int sid, string sname, string ssemester);
         ~Student();
+
         void set_id(int sid);
-        int get_id();
+        int get_id() const;
 
         void set_name(string sname);
-        string get_name();
+        string get_name() const;
 
         void set_semester(string semester);
-        string get_semester();
+        string get_semester() const;
 };
 
 #endif // STUDENT_H

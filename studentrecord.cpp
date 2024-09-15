@@ -6,7 +6,7 @@ void StudentRecords::add_student(Student student)
     Students.push_back(student);
 }
 
-Student StudentRecords::get_student(int sid)
+Student StudentRecords::get_student(int sid) const
 {
     int i = 0;
     while (i < Students.size() && Students[i].get_id() != sid)
@@ -23,7 +23,7 @@ void StudentRecords::add_course(Course course)
     Courses.push_back(course);
 }
 
-Course StudentRecords::get_course(int cid)
+Course StudentRecords::get_course(int cid) const
 {
     int i = 0;
     while (i < Courses.size() && Courses[i].get_course_id() != cid)
@@ -39,7 +39,7 @@ void StudentRecords::add_grade(Grade grade)
     Grades.push_back(grade);
 }
 
-vector<Grade> StudentRecords::get_grade(int sid)
+vector<Grade> StudentRecords::get_grade(int sid) const
 {
     vector<Grade> filtered_grades;
 

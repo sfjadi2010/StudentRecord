@@ -19,13 +19,13 @@ class Course
         ~Course();
         
         void set_course_id(int cid);
-        int get_course_id();
+        int get_course_id() const;
         
         void set_course_name(string cname);
-        string get_course_name();
+        string get_course_name() const;
 
         void set_course_credits(int ccredits);
-        int get_course_credits();
+        int get_course_credits() const;
 };
 
 #endif // COURSE_H

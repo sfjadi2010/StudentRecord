@@ -16,7 +16,7 @@ void Student::set_id(int sid)
     this->id = sid;
 }
 
-int Student::get_id()
+int Student::get_id() const
 {
     return this->id;
 }
@@ -26,7 +26,7 @@ void Student::set_name(string sname)
     this->name = sname;
 }
 
-string Student::get_name()
+string Student::get_name() const
 {
     return this->name;
 }
@@ -36,7 +36,7 @@ void Student::set_semester(string ssemester)
     this->semester = ssemester;
 }
 
-string Student::get_semester()
+string Student::get_semester() const
 {
     return this->semester;
 }
